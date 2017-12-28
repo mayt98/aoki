@@ -1,0 +1,12 @@
+body{background-image:url("/aoki_images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;}
+form{
+    position: relative;
+    left:470px;
+    top:420px;
+    
+}
+#sub{
+    color: green;
+}
