@@ -15,7 +15,8 @@
     </style>
 </head>
 <body>
-<form action="#" method="post">
+${errorMessage}
+<form action="/ServletLogin" method="post">
     用户名：<input type="text" value="zhangsan" name="uname"><br>
     密 码 ：<input type="password" name="upass" value="upass"><br>
     <input id="sub" type="submit" value="登录">

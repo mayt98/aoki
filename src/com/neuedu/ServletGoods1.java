@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -16,9 +17,14 @@ public class ServletGoods1 extends HttpServlet {
 
         request.setCharacterEncoding("utf-8");
         response.setContentType("text.html;charset=utf-8");
-        String x=request.getParameter("count");
-        System.out.println(x);
-        response.sendRedirect("/aoki_html/login.jsp");
+        String count=request.getParameter("count");
+        String price=request.getParameter("price");
+        System.out.println(count+"数量。 单价是"+price);
+        HttpSession hs=request.getSession();
+        hs.setAttribute("count",count);
+        hs.setAttribute("price",price);
+        hs.setAttribute("totalMoney",Double.parseDouble(count)*Double.parseDouble(price));
+        response.sendRedirect("/aoki_html/pay.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

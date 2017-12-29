@@ -13,10 +13,17 @@
 <body>
 <div>
     <img src="/aoki_images/1.jpg">
-    <tr>
-        <td>1</td>
-        <td>1</td>
-    </tr>
+<ul>
+    <li>111</li>
+    <li>111</li>
+    <li>111</li>
+    <li>111</li>
+   <li> <span id="introduce" style="position: relative;top:-280px;">商品简介巴拉巴拉</span> </li>
+    <li> <span id="price" style="position: relative;left:-130px;top:-240px;" ><input type="text" name="price" value="100"></span></li>
+    <li><span id="count" style="position: relative;left:-300px;top:-200px; ">数量：<input name="count" type="number"></span></li>
+
+    <li>    <span id="sub" style="position: relative;left:-480px;top:-160px;"><input type="submit" value="提交订单"></span></li>
+</ul>
 </div>
 </body>
 </html>
