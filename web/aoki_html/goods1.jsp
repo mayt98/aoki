@@ -6,12 +6,14 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>Title</title>
     <script>
         window.onload=function(){
-
+            var s="${uname}";
+            console.log(s);
             document.getElementById("shopping-cart").onclick=function(){
                 document.form.action="/ServletShoppingCart";
                 document.getElementById("submit").click();

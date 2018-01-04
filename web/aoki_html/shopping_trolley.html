@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车页面</title>
+    <link rel="stylesheet" href="../aoki_css/shopping_trolley.css">
+    <script src="../js/confirm_pay.js"></script>
+
+</head>
+<body>
+<div class="cover" >
+    <div class="confirm-pay-page">
+    </div>
+
+    <div class="confirm-pay-information" >
+        <div class="order-pay-title">订单信息</div>
+        <div class="information-left">
+            <div class="ttu">收货信息:</div>
+            <hr>
+            <form action="">
+                <span class="cla-span">收件人:</span> <input type="text" class="receiver" placeholder="收件人姓名"><br>
+
+                <span class="cla-span">手机号:</span><input type="text" class="phone" placeholder="输入手机号"><br><br>
+
+                <span class="cla-span">收件地址: </span><select name="sheng" id="sheng" class="sheng">
+
+                <option value="辽宁省">辽宁省</option>
+                <option value="吉林省">吉林省</option>
+                <option value="贵州省">贵州省</option>
+            </select>
+                <select name="shi" id="shi" class="shi">
+
+                    <option value="沈阳市">沈阳市</option>
+                    <option value="丹东市">丹东市</option>
+                    <option value="大连市">大连市</option>
+                </select>
+                <select name="shi" id="qu" class="shi">
+
+                    <option value="一区">一区</option>
+                    <option value="二区">二区</option>
+                    <option value="三区">三区</option>
+                </select>
+                <br>
+                <span class="cla-span">详细地址:</span><input type="text" class="loc-detail" placeholder="街道/小区/村镇">
+                <div class="ying-pay">应支付:
+                    <div>￥688.00</div>
+                </div>
+                <span class="cla-span">请支付</span> <input type="text" class="pay" placeholder="支付金额">
+                <br>
+
+                <input type="submit" class="submit" id="submit" value="提交订单">
+            </form>
+        </div>
+    </div>
+</div>
+<header>
+    <div class="top">
+        <div class="web-map">网站导航</div>
+        <div class="account-service">客户服务</div>
+        <div><a href="" class="loginbutton">请登录？</a></div>
+        <div><a href="" class="registerbutton">注册有礼</a></div>
+
+        <div class="myorder">我的订单</div>
+        <div class="myorder">我的消息</div>
+        <div class="myorder">购物车</div>
+        <div class="myorder">我的会员</div>
+        <div class="myorder">我的收藏</div>
+    </div>
+</header>
+<div class="main">
+    <div class="main-top">
+        <div class="logo"></div>
+        <div class="search">
+            <input type="text" placeholder="搜索你喜欢的商品">
+            <div class="search-button">搜索</div>
+        </div>
+    </div>
+    <div class="bodys">
+        <div class="detail-title">
+            <input type="checkbox">全选
+            <div class="detail">商品信息</div>
+            <div class="detail">规格</div>
+            <div class="detail">单价（元）</div>
+            <div class="detail">数量</div>
+            <div class="detail">小计（元）</div>
+            <div class="detail">操作</div>
+        </div>
+        <div class="goods">
+            <input type="checkbox">
+            <div class="goods-image">
+                <img src="../aoki_images/0070170677-000000010052305428_1.jpg" height="60" width="60"/>
+
+            </div>
+            <div class="goods-info">商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息</div>
+            <div class="goods-size">
+                <div>颜色:
+                    <div>红色</div>
+                </div>
+                <div>尺寸:
+                    <div>XL</div>
+                </div>
+            </div>
+            <div class="goods-price">￥688.00</div>
+            <div class="goods-amount">
+                <input type="button" value=" - " class="jian">
+                <input type="text" class="amount" placeholder="---">
+                <input type="button" value=" + " class="jia">
+            </div>
+            <div class="goods-account">￥688.00</div>
+            <div class="goods-option">
+                <input type="button" value="收藏"><br>
+                <input type="button" value="删除">
+
+            </div>
+        </div>
+
+        <div class="goods">
+            <input type="checkbox">
+            <div class="goods-image">
+                <img src="../aoki_images/0070170677-000000010052305428_1.jpg" height="60" width="60"/>
+
+            </div>
+            <div class="goods-info">商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息</div>
+            <div class="goods-size">
+                <div>颜色:
+                    <div>红色</div>
+                </div>
+                <div>尺寸:
+                    <div>XL</div>
+                </div>
+            </div>
+            <div class="goods-price">￥688.00</div>
+            <div class="goods-amount">
+                <input type="button" value=" - " class="jian">
+                <input type="text" class="amount" placeholder="---">
+                <input type="button" value=" + " class="jia">
+            </div>
+            <div class="goods-account">￥688.00</div>
+            <div class="goods-option">
+                <input type="button" value="收藏"><br>
+                <input type="button" value="删除">
+
+            </div>
+        </div>
+
+        <div class="close-account">
+            <input type="checkbox">全选
+            <div class="total">总价：
+                <div>￥688.00</div>
+            </div>
+            <div class="total-button">
+                <input type="submit" value="结算">
+            </div>
+        </div>
+        <div class="feigexian">
+
+        </div>
+        <div class="goods-zaituijian">
+            <div class="ccy">
+                <div class="cainixh">猜你喜欢</div>
+                <div class="idd-goods">
+                    <div class="goods-show">
+                        <div class="recommend">
+                            <div class="goods-recommend">
+                                <img src="../aoki_images/0070119648-000000000774162821_1_220x220.jpg" height="220"
+                                     width="220"/>
+                                <div class="a-lianjie"><a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a></div>
+                            </div>
+                            <div class="goods-recommend">
+
+                                <img src="../aoki_images/0070154332-000000000826208138_1_220x220.jpg" height="220"
+                                     width="220"/>
+                                <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
+                            </div>
+                            <div class="goods-recommend">
+
+                                <img src="../aoki_images/0070159286-000000010009788149_1_220x220.jpg" height="220"
+                                     width="220"/>
+                                <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
+                            </div>
+
+
+                            <div class="goods-recommend">
+                                <img src="../aoki_images/0070160106-000000000685824760_1_220x220.jpg" height="220"
+                                     width="220"/>
+                                <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="service">
+        <div class="aoki-service">
+            <div>关于Aoki</div>
+            <div class="about"><a href="">帮助中心</a></div>
+            <div class="about"><a href="">诚聘英才</a></div>
+            <div class="about"><a href="">法律声明</a></div>
+        </div>
+        <div class="aoki-service">
+            <div class="seler-center">买家中心</div>
+            <div class="about"><a href="">在线答疑</a></div>
+            <div class="about"><a href="">品质保障</a></div>
+        </div>
+        <div class="aoki-service">
+            <div>卖家中心</div>
+            <div class="about"><a href="">在线咨询</a></div>
+            <div class="about"><a href="">商品报名</a></div>
+            <div class="about"><a href="">商家规则</a></div>
+        </div>
+        <div class="aoki-service">
+            <div>有话要说</div>
+            <div class="about"><a href="">服务热线</a></div>
+            <div class="about"><a href="">廉正举报</a></div>
+            <div class="about"><a href="">我要投诉</a></div>
+        </div>
+        <div class="aoki-service">
+            <div>服务保障</div>
+            <div class="about"><a href="">全场包邮</a></div>
+            <div class="about"><a href="">七天无理由退换货</a></div>
+            <div class="about"><a href="">30天低价</a></div>
+        </div>
+    </div>
+
+</div>
+<div class="footer-step">
+    <div class="footer-step-control">
+        <a href="">天猫商城|</a><a href="">京东商城|</a><a href="">淘宝网|</a>
+        <a href="">聚划算|</a><a href="">苏宁易购|</a><a href="">国美商城|</a>
+        <a href="">阿里巴巴|</a><a href="">高德地图|</a><a href="">支付宝|</a>
+        <a href="">微信支付|</a><a href="">钉钉|</a><a href="">全球速卖</a>
+        <div>增值电信业务经营许可证：UT-hello-aoki-0205</div>
+        <div>备案号:00000000000</div>
+        <div>地址:北京市海淀区305路2号 &nbsp;&nbsp;&nbsp;&nbsp;举报电话:0763-5201314</div>
+
+    </div>
+</div>
+
+</body>
+</html>

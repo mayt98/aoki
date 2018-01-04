@@ -1,0 +1,558 @@
+body{
+    margin: 0px;
+}
+header{
+    height: 110px;
+    width: 1500px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    background-image: url("../aoki_images/AOKIlogo.png");
+    width: 300px;
+    height: 100px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 85px;
+}
+.search{
+    height: 30px;
+    width: 300px;
+    padding-left: 20px;
+    border: 2px solid orangered;
+    margin-left: 200px;
+}
+.searchbutton{
+    background-color: #663200;;
+    height: 40px;
+    width: 60px;
+    font-size: large;
+    font-weight: 500;
+    border: 1px solid #663200;
+    border-radius: 15px;
+    color: white;
+}
+.hyusername{
+    position: relative;
+    height: 50px;
+    width: 250px;
+    margin-left: 273px;
+    margin-top: 50px;
+    color: red;
+    line-height: 50px;
+}
+.main{
+    width: 1500px;
+    height: 1000px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.show-left{
+    width: 300px;
+    height: 1000px;
+    border: 1px solid black;
+}
+.show-right{
+    width: 1186px;
+    height: 1000px;
+    border: 1px solid black;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+}
+.manage-title{
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    line-height: 50px;
+}
+.manage-feilei{
+    width: 298px;
+    height: 900px;
+    border: 1px solid black;
+}
+.manage{
+    width: 298px;
+    height: 40px;
+    background-color: #6e1508;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.manage:hover{
+    cursor: pointer;
+    background-color: #ff5500;
+    border: 2px solid #ff5500;
+}
+.user-manage{
+    width: 1186px;
+    height: 940px;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: 14px;
+    z-index: 15;
+
+}
+.user-top{
+    margin-top: 16px;
+}
+.amn-title{
+    display: flex;
+    align-items: center;
+}
+.user-title{
+    width: 388px;
+    height: 30px;
+    border: 1px solid #6e1508;
+    background-color: #6e1508;
+    font-size: larger;
+    line-height: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+.user-title:hover{
+    background-color: #9d2c00;
+    cursor: pointer;
+    border: 2px solid #9d2c00;
+
+}
+.all-user{
+    position:absolute;
+
+}
+.manager-user {
+    position: absolute;
+    margin-left: 392px;
+
+
+}
+.normal-user{
+    position: absolute;
+    margin-left: 784px;
+}
+.search-user{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 80px;
+    position: absolute;
+}
+.search-user-text{
+    width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+}
+.search-user-button{
+    width: 60px;
+    height: 30px;
+    background-color: #663200;
+    color: white;
+    border: none;
+}
+.bbq{
+    margin-top: 15px;
+    position: absolute;
+    margin-left: 400px;
+}
+.show-update{
+    width: 670px;
+    height:200px;
+    background-color: red;
+    position: absolute;
+    margin-left: 504px;
+    margin-top: 0px;
+}
+.ccr{
+    width: 100px;
+    height: 40px;
+    border:1px solid black;
+    background-color: #a0811f;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    line-height: 40px;
+}
+.ccr:hover{
+    cursor: pointer;
+    background-color: #ff5500;
+    border: 1px solid #ff5500;
+}
+
+.show-all-user{
+    width: 1186px;
+    height: 800px;
+    margin-top: 216px;
+    border: 1px solid red;
+    overflow: scroll;
+    position: relative;
+
+}
+.detail-title{
+    width: 1400px;
+    height: 20px;
+    background-color: #3e3e3e;
+}
+.user-detail-title{
+    width: 1400px;
+    height: 30px;
+    border-bottom: 1px solid ghostwhite;
+    border-left: 1px solid ghostwhite;
+    border-right: 1px solid ghostwhite;
+}
+.ul{
+    display: flex;
+    align-items: center;
+
+}
+.ul li{
+    margin-left: 88px;
+    list-style: none;
+    position: absolute;
+}
+#userid{
+    margin-left: 10px;
+
+}
+.ulli li{
+    margin-left: 55px;
+    list-style: none;
+    position: absolute;
+
+}
+.ulli{
+    display: flex;
+    align-items: center;
+}
+
+.goods-manage{
+    width: 1186px;
+    height: 950px;
+    border: 1px solid black;
+    position: absolute;
+}
+.goods-top{
+    width: 1186px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    line-height: 40px;
+}
+.goods-show-bodys{
+    width: 1186px;
+    height: 900px;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+.bodys-left{
+    width: 800px;
+    height: 900px;
+    border: 1px solid yellow;
+}
+.bodys-center{
+    width: 386px;
+    height: 900px;
+    border: 1px solid magenta;
+}
+.bodys-right{
+    width: 100px;
+    height: 135px;
+    position:fixed;
+    margin-left: 350px;
+    margin-top: 20px;
+
+
+}
+.goods-info-title{
+    width: 800px;
+    height: 30px;
+    background-color: #005aa0;
+    position: relative;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items:center;
+}
+.spzd{
+    margin-left: 20px;
+}
+.kczl{
+    margin-left: 300px;
+}
+.zdms{
+    margin-left: 260px;
+}
+.all-kucun-kuan{
+    width: 800px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.detail-spzd{
+    width: 100px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgba(250, 250, 250, 0.6);
+}
+.detail-zdms{
+    width: 600px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgba(250, 250, 250, 0.6);
+}
+.detail-kczl{
+    width: 100px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgba(250, 250, 250, 0.6);
+}
+.goods-fenlei-title{
+    width: 800px;
+    height: 30px;
+    background-color: #3e3e3e;
+    position: relative;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items:center;
+    margin-top: 2px;
+
+}
+.goods-fenlei-content{
+    display: flex;
+    align-items: center;
+}
+.goods-type{
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(250, 250, 250, 0.71);
+}
+.detail-type{
+    width: 600px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(250, 250, 250, 0.71);
+}
+.goods-shuliang{
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(250, 250, 250, 0.71);
+}
+.goods-option{
+    width: 380px;
+    height: 30px;
+    background-color: #8c8d91;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.option-goods {
+    width: 30px;
+    height: 100px;
+    background-color: #9d2c00;
+    color: white;
+    font-weight: 400;
+    position: absolute;
+    text-align: center;
+}
+.option-goods:hover{
+    cursor: pointer;
+    background-color: #ff5500;
+    border: 2px solid #ff5500;
+}
+
+.delete-goods-button{
+    margin-top: 102px;
+}
+.search-goods-button{
+    margin-top: 204px;
+}
+.update-goods-button{
+    margin-top: 306px;
+}
+
+
+/*添加商品*/
+.add-goods-page{
+    position: absolute;
+}
+.select-type-godds{
+    margin-left: 10px;
+}
+.type-select{
+    margin-top: 20px;
+    width: 100px;
+    height: 20px;
+
+
+}
+.add-input{
+    margin-left: 10px;
+}
+.add-input input {
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+}
+.add-button{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+.add-button input{
+    margin-left: 60px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-family: 400;
+    border: none;
+    background-color: #ff5500;
+}
+
+/*删除商品*/
+.delete-goods-page{
+    position: absolute;
+    width: 380px;
+    height: 800px;
+
+}
+.delete-base-id{
+    width: 380px;
+    height: 200px;
+    line-height: 200px;
+    border: 1px solid red;
+}
+.delete-goods-id{
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    margin-left: 90px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+}
+.delete-select{
+    width: 60px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #663200;
+}
+.delete-select:hover{
+    cursor: pointer;
+    background-color: #ff5500;
+    border: 2px solid #ff5500;
+
+}
+.delete-goods-show{
+
+}
+.detele-title{
+    width: 380px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    background-color: #8c8d91;
+
+}
+.goods-image{
+    width: 220px;
+    height: 220px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.goods-content{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid gainsboro;
+    margin-left: 10px;
+}
+.disp{
+    display: flex;
+    align-items: center;
+
+}
+.font-w{
+    font-weight: 800px;
+    color: red;
+}
+.delete-introduce{
+    width: 250px;
+}
+.delete-que{
+  margin-top: 50px;
+}
+.delete-que input{
+    width: 100px;
+    height: 40px;
+    background-color: #663200;
+    color: white;
+    margin-left: 60px;
+    text-align: center;
+    height: 40px;
+    border: none;
+}
+.delete-que input:hover{
+    cursor: pointer;
+    background-color: #ff5500;
+}
+.search-goods-page{
+    position: absolute;
+    width: 380px;
+    height: 800px;
+    /*background-color: #8c8d91;*/
+}
+.update-goods-page{
+    position: absolute;
+    width: 380px;
+    height: 800px;
+    background-color: #f4f5f9;
+}
+.select-godds-page{
+    width: 380px;
+    height: 200px;
+    line-height: 200px;
+
+}
+.ttq{
+    margin-left: 100px;
+}

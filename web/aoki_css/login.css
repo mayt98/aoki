@@ -1,12 +1,25 @@
-body{background-image:url("/aoki_images/background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;}
+/*body{background-image:url("/aoki_images/loginbackground3.jpg");*/
+    /*background-repeat:no-repeat;*/
+    /*background-position: center;*/
+
+    /*width:100%;*/
+/*}*/
 form{
     position: relative;
-    left:470px;
-    top:420px;
-    
+    left:6%;
+    top:-220px;
+    height:200px;
+    width:400px;
+    border:10px none black;
+
 }
-#sub{
+#sub1{
+    width:104px;
+    height:40px;
     color: green;
+}
+#sub2{
+    width:104px;
+    height:40px;
+    color: red;
 }

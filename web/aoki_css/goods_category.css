@@ -1,0 +1,344 @@
+
+body{
+    margin: 0px;
+}
+header{
+    background-color: #f5f5f5;
+    height: 25px;
+    width: 1425px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.web-map{
+    font-size: small;
+    margin-left: 150px;
+}
+.account-service{
+    font-size: small;
+    margin-left: 50px;
+}
+.loginbutton{
+    margin-left: 500px;
+    font-size: small;
+    text-decoration:none;
+}
+.registerbutton{
+    margin-left: 20px;
+    font-size: small;
+    text-decoration:none;
+}
+.myorder{
+    margin-left: 20px;
+    font-size: small;
+}
+.main-top{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    background-image: url("../aoki_images/logo.png");
+    width: 300px;
+    height: 100px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+
+}
+.search{
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 452px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+    border: 2px solid orangered ;
+}
+.search-button{
+    background-color: orangered;
+    width: 60px;
+    height: 36px;
+    font-size: large;
+    text-align: center;
+    line-height: 35px;
+
+}
+.bodys{
+    position: relative;
+}
+
+.indexiterm{
+    background-color: black;
+    height: 35px;
+    width: 1425px;
+    margin-top: 10px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.rollbackimage{
+    width: 1425px;
+    height: 400px;
+}
+.hotindexmenu{
+    margin-left: 385px;
+    font-size: large;
+    font-weight:bold;
+    width: auto;
+    height: 35px;
+    line-height: 32px;
+}
+.hotdownterm{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    margin-left: 385px;
+    background-color: white;
+    border: 1px solid #eeeff1;
+    z-index: 50;
+}
+.hotdownterm,.hotindexmenu,.indexmenu:hover{
+    cursor: pointer;
+}
+.indexmenu{
+    margin-left: 20px;
+    font-size: large;
+    font-weight:bold;
+}
+.category-roll{
+    position: absolute;
+    left: 100px;
+}
+.goods-detail-page{
+    width: 1208px;
+    height: auto;
+    border: 1px solid black;
+    left: 100px;
+    top: 162px;
+    position: relative;
+}
+.goods-detail-top{
+    width: auto;
+    height: 266px;
+    margin-top: -16px;
+}
+li{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-left: -40px;
+    list-style: none;
+    border-bottom: 1px solid #d8dbe2;
+}
+.goods-detail-pingpai{
+    height: 100px;
+    border-top: 1px solid #d8dbe2;
+}
+.category-pingpai-name{
+    width: 120px;
+    height: 100px;
+    border-right: 1px solid #d8dbe2;
+    font-size: large;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+}
+.goods-category-name{
+    height: 40px;
+    width: 120px;
+    border-right: 1px solid #d8dbe2;
+    text-align: center;
+    line-height: 40px;
+    font-size: large;
+    font-weight: bold;
+}
+.goods-name-detail{
+    position: absolute;
+    height: 40px;
+    width: 1087px;
+    z-index: 50;
+}
+.pingpai-name-detail{
+    height: 100px;
+    position: absolute;
+    width: 1087px;
+    z-index: 50;
+}
+.price-index{
+    display: flex;
+    align-items: center;
+}
+.price-index a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #005aa0;
+    font-size: small;
+    font-weight: 700;
+    line-height: 40px;
+
+}
+.zdy-price{
+    margin-left: 20px;
+}
+.zdy-price input{
+    width: 50px;
+}
+.goods-name-detail{
+    display: flex;
+    align-items: center;
+}
+.goods-name-detail a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #005aa0;
+    font-size: small;
+    font-weight: 700;
+    line-height: 40px;
+}
+.index-button{
+    width: auto;
+    height: 35px;
+    margin-top: 20px;
+    background-color: #eeeff1;
+    display: flex;
+    align-items: center;
+}
+.index-button button{
+    background-color: white;
+    border: 1px solid #c3c6cd;
+}
+.index-button input{
+    margin-left: 40px;
+}
+.zonghe-index{
+    margin-left: 40px;
+}
+.goods-step{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+.goods{
+    width: 270px;
+    height: 420px;
+    border: 1px solid black;
+    margin-left: 30px;
+}
+.detail-introduce{
+    text-align: center;
+}
+.detail-introduce a{
+    text-decoration: none;
+    color: #005aa0;
+    font-size: small;
+}
+.small-image{
+    margin-top: 10px;
+}
+.good-share{
+    display: flex;
+    align-items: center;
+}
+.good-share div a{
+    text-decoration: none;
+    color: #a01f47;
+    margin-left: 9px;
+}
+
+.show-price{
+    margin-left: 9px;
+    background-color: red;
+    color: white;
+}
+.good-share button{
+    margin-left: 5px;
+    height: 30px;
+    background-color: #ff2fab;
+    color: white;
+    border: 1px solid #c1c4cb;
+    border-radius: 2px;
+}
+.recommend{
+    margin-left: 10px;
+    width: 1410px;
+    height: 280px;
+    margin-top: 195px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.goods-recommend{
+    width: 220px;
+    height: 280px;
+    margin-left: 11px;
+    border: 1px solid black;
+}
+.goods-recommend a{
+    font-size: x-small;
+    color: #005aa0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    position: relative;
+    height: 140px;
+    background-color: #f2f3f7;
+    border-top: 2px solid #b9babe;
+    margin-top: 50px;
+}
+.service{
+    margin-left: 220px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.aoki-service{
+    margin-left: 100px;
+}
+.about a{
+    line-height: 30px;
+    text-decoration: none;
+    color: #8c8d91;
+    font-size: small;
+    margin-left: 5px;
+}
+.seler-center{
+    margin-top: -30px;
+}
+
+.footer-step{
+    position: relative;
+    height: 110px;
+    background-color: #f2f3f7;
+    border-top: 1px solid #b9babe;
+}
+.footer-step-control a{
+    text-decoration: none;
+    font-size: small;
+    color:#8c8d91 ;
+    margin-left: 5px;
+}
+.footer-step-control div{
+    line-height: 25px;
+}
+.footer-step-control{
+    margin-left: 300px;
+    margin-top: 20px;
+    color: #8c8d91;
+    font-size: small;
+}

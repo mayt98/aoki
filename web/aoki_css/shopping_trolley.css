@@ -1,0 +1,464 @@
+body{
+    margin: 0px;
+}
+header{
+    background-color: #f5f5f5;
+    height: 25px;
+    width: 1530px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.web-map{
+    font-size: small;
+    margin-left: 150px;
+}
+.account-service{
+    font-size: small;
+    margin-left: 50px;
+}
+.loginbutton{
+    margin-left: 500px;
+    font-size: small;
+    text-decoration:none;
+}
+.registerbutton{
+    margin-left: 20px;
+    font-size: small;
+    text-decoration:none;
+}
+.myorder{
+    margin-left: 20px;
+    font-size: small;
+}
+.main-top{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    background-image: url("../aoki_images/logo.png");
+    width: 300px;
+    height: 100px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+
+}
+.search{
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 452px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+    border: 2px solid orangered ;
+}
+.search-button{
+    background-color: orangered;
+    width: 60px;
+    height: 36px;
+    font-size: large;
+    text-align: center;
+    line-height: 35px;
+
+}
+.detail-title{
+    width: 1100px;
+    height: 30px;
+    margin-left: 200px;
+    margin-top: 40px;
+    border-top: 4px solid black;
+    border-left: 1px solid beige;
+    border-bottom: 1px solid beige;
+    border-right: 1px solid beige;
+    display: flex;
+    align-items: center;
+}
+.goods-image{
+    margin-left: 20px;
+}
+.detail{
+    margin-left: 115px;
+}
+.goods{
+    width: 1100px;
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 200px;
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+}
+.goods-info{
+    margin-top: 20px;
+    color: #005aa0;
+    font-size: x-small;
+    margin-left: 10px;
+    line-height: 15px;
+    width: 195px;
+    height: 60px;
+}
+.goods-size{
+    color: #939498;
+    font-size: x-small;
+    width: 100px;
+    height: 35px;
+    margin-left: 37px;
+    line-height: 20px;
+
+}
+.goods-size div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.goods-price{
+    line-height: 55px;
+    margin-left: 40px;
+    font-size: small;
+    color: #d92e08;
+    font-weight: bold;
+    width: 80px;
+    height: 55px;
+    text-align: center;
+}
+.goods-amount{
+    margin-left: 105px;
+}
+.amount{
+    width: 20px;
+    margin-left: -5px;
+    padding-left: 10px;
+    border-left:none ;
+    border-right: none;
+    border-bottom: 1px solid black;
+    border-top:1px solid black;
+    outline: none;
+}
+.jian{
+    color: white;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top:1px solid black;
+    border-right: none;
+    background-color: #9d2c00;
+    outline: none;
+}
+.jian:hover{
+    background-color: red;
+}
+.jia{
+    color: white;
+    margin-left: -5px;
+    border-left: none;
+    border-bottom: 1px solid black;
+    border-top:1px solid black;
+    border-right: 1px solid black;
+    background-color: #9d2c00;
+    outline: none;
+
+}
+.jia:hover{
+    background-color: red;
+}
+.goods-account{
+    margin-left: 85px;
+    color: red;
+    font-size: small;
+    font-weight: bold;
+}
+.goods-option{
+    margin-left: 135px;
+}
+.goods-option input{
+    background-color: #6e1508;
+    border: none;
+    color: white;
+}
+.close-account{
+    width: 1100px ;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 30px;
+    border:1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+}
+.total{
+    margin-left: 800px;
+    display: flex;
+    align-items: center;
+}
+.total-button{
+    margin-left: 43px;
+}
+.total-button input{
+    width: 90px;
+    height: 50px;
+    background-color: #ff9900;
+    border: none;
+}
+.feigexian{
+    width: 1100px;
+
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 200px;
+    background-color: ghostwhite;
+}
+.goods-zaituijian{
+    width: 1100px;
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.ccy{
+    width: 1100px;
+    height: 40px;
+    background-color: #040505;
+
+}
+.cainixh{
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    line-height: 40px;
+    margin-left: 18px;
+
+}
+.recommend{
+    margin-top: 45px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+.goods-recommend{
+    width: 220px;
+    height: 280px;
+    margin-left: 11px;
+    border: 1px solid black;
+}
+.goods-recommend a{
+    font-size: x-small;
+    color: #005aa0;
+    text-align: center;
+    line-height: 20px;
+}
+.idd-goods{
+    position: relative;
+}
+.a-lianjie{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    height: 140px;
+    background-color: #f2f3f7;
+    border-top: 2px solid #b9babe;
+    margin-top: 20px;
+}
+.service{
+    margin-left: 220px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.aoki-service{
+    margin-left: 100px;
+}
+.about a{
+    line-height: 30px;
+    text-decoration: none;
+    color: #8c8d91;
+    font-size: small;
+    margin-left: 5px;
+}
+.seler-center{
+    margin-top: -30px;
+}
+
+.footer-step{
+    height: 110px;
+    background-color: #f2f3f7;
+    border-top: 1px solid #b9babe;
+}
+.footer-step-control a{
+    text-decoration: none;
+    font-size: small;
+    color:#8c8d91 ;
+    margin-left: 5px;
+}
+.footer-step-control div{
+    line-height: 25px;
+}
+.footer-step-control{
+    margin-left: 300px;
+    margin-top: 20px;
+    color: #8c8d91;
+    font-size: small;
+}
+.confirm-pay-page{
+    position: absolute;
+    width: 1520px;
+    height: 1333px;
+    background-color: black;
+    opacity:0.5;
+    z-index: 51;
+
+}
+.confirm-pay-information{
+    width: 350px;
+    height: 550px;
+    background-color: white;
+    top: 150px;
+    left: 550px;
+    position: absolute;
+    opacity:1;
+    z-index: 52;
+}
+.order-pay-title{
+    width: 350px;
+    height: 50px;
+    background-color: #9d2c00;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+}
+/*.show-left{*/
+    /*width: 100px;*/
+    /*height: 500px;*/
+    /*background-color: #005aa0;*/
+    /*position: absolute;*/
+/*}*/
+/*.show-right{*/
+    /*width: 98px;*/
+    /*height: 500px;*/
+    /*margin-left: 452px;*/
+    /*margin-top: -502px;*/
+    /*background-color: #2dd536;*/
+    /*position: absolute;*/
+/*}*/
+.information-left{
+    width: 350px;
+    height: 500px;
+    border: 1px solid black;
+}
+.ttu{
+    color: #005aa0;
+    margin-left: 20px;
+}
+.receiver {
+    border-bottom: 1px solid #d51825;
+    border-right: none;
+    border-left: none;
+    border-top:none;
+    height: 15px;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 18px;
+    margin-top: 20px;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.receiver:hover{
+    background-color: #d51825;
+    color: white;
+}
+.phone {
+    border-bottom: 1px solid #ff3be2;
+    border-right: none;
+    border-left: none;
+    border-top:none;
+    height: 15px;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.phone:hover{
+    background-color: #ff3be2;
+    color: white;
+}
+.send-to{
+  margin-top: 20px;
+}
+.loc-detail{
+    border-bottom: 1px solid #2dd536;
+    border-right: none;
+    border-left: none;
+    border-top:none;
+    height: 15px;
+    outline: none;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: small;
+
+}
+.sheng,.shi ,.qu{
+    height: 20px;
+    border: none;
+    outline: none;
+}
+.ying-pay{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    color: #6e1508;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.ying-pay div{
+    color: red;
+    margin-left: 50px;
+}
+.cla-span{
+    margin-left: 30px;
+    font-weight: bold;
+    color: #6e1508;
+}
+.pay{
+    width: 100px;
+    height: 40px;
+    border-radius: 23px;
+    border: 1px solid black;
+    margin-left: 30px;
+    padding-left: 10px;
+    outline: none;
+    background-color: #663200;
+    color: white;
+    font-size: large;
+}
+.submit{
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    background-color: #ff5500;
+    color: white;
+    border: none;
+}

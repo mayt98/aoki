@@ -18,6 +18,7 @@ public class Filter1 implements Filter
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException
     {
+
         System.out.println("doFilter...");
         req.setCharacterEncoding("utf-8");
         resp.setContentType("text/html;charset=utf-8");

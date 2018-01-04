@@ -1,0 +1,587 @@
+
+body{
+    margin: 0px;
+}
+header{
+    background-color: #f5f5f5;
+    height: 25px;
+    width: 1425px;
+    line-height: 25px;
+}
+.top{
+    display: flex;
+    align-items: center;
+}
+.web-map{
+    font-size: small;
+    margin-left: 150px;
+}
+.account-service{
+    font-size: small;
+    margin-left: 50px;
+}
+.loginbutton{
+    margin-left: 420px;
+    font-size: small;
+    text-decoration:none;
+    position: absolute;
+    margin-top: -13px;
+}
+.registerbutton{
+    font-size: small;
+    text-decoration:none;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: -13px;
+
+}
+.myorder{
+    margin-left: 20px;
+    font-size: small;
+
+}
+.heaorder{
+    margin-left: 610px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.main-top{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    background-image: url("../images/logo.png");
+    width: 300px;
+    height: 100px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-left: 210px;
+    position: relative;
+
+}
+.search{
+    margin-left: 80px;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.search input{
+    width: 452px;
+    height: 30px;
+    outline: none;
+    padding-left: 10px;
+    border: 2px solid orangered ;
+}
+.search-button{
+    background-color: orangered;
+    width: 60px;
+    height: 36px;
+    font-size: large;
+    text-align: center;
+    line-height: 35px;
+    font-weight: 500;
+
+}
+.search-button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+
+.indexiterm{
+    background-color: black;
+    height: 35px;
+    width: 1520px;
+    margin-top: 10px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.hotindexmenu{
+    margin-left: 350px;
+    font-size: large;
+    font-weight:bold;
+    width: auto;
+    height: 35px;
+    line-height: 32px;
+}
+.indexmenu:hover{
+    cursor: pointer;
+    background-color: #eaeaea;
+    color: black;
+}
+.hotindexmenu:hover{
+    cursor: pointer;
+    background-color: #eaeaea;
+    color: black;
+}
+.indexmenu{
+    margin-left: 50px;
+    font-size: large;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+}
+.goods-order-page{
+    position: relative;
+    width: 1028px;
+    height: 1005px;
+    left: 200px;
+    top: 20px;
+    border:1px solid black;
+}
+.goods-map{
+    margin-top: 20px;
+    margin-left: 10px;
+
+
+}
+.cct{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 450px;
+    border-bottom: 2px double black;
+}
+.position{
+    font-size: large;
+    font-weight: 600;
+}
+.chrid{
+    border: 1px solid red;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-right-radius: 12px ;
+    border-top-right-radius: 12px ;
+}
+.goods-detail-left{
+    position: absolute;
+    width: 420px;
+    height: 490px;
+    margin-top: 10px;
+    border: 1px solid #979797;
+}
+
+.big-image-show img{
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+.small-image-show{
+    margin-left: 15px;
+}
+.small-image-show img{
+    margin-top: 420px;
+    position: absolute;
+}
+.small-image-show img:hover{
+    cursor: pointer;
+    border: 1px solid red;
+}
+.small-1{
+    margin-left: 40px;
+}
+.small-2{
+    margin-left: 105px;
+}
+.small-3{
+    margin-left: 170px;
+}
+.small-4{
+    margin-left: 235px;
+}
+.goods-detail-right{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    margin-left: 440px;
+    margin-top: 10px;
+    border: 1px solid #f8f8f8;
+}
+.goods-introduce{
+    color: #040505;
+}
+.goods-active{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.goods-chuxiao{
+    width: 400px;
+    height: 50px;
+    background-color: #f5342e;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #fff44c;
+
+}
+.goods-cankaojia{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #939498;
+    font-size: small;
+}
+.goods-cankaojia div{
+
+    margin-left: 20px;
+}
+.goods-shijia{
+    margin-left: 20px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    color: #939498;
+    font-size: small;
+}
+.goods-shijia div{
+    margin-left: 20px;
+    color: red;
+    font-size: larger;
+    font-weight:bolder;
+}
+.good-user{
+    margin-top: 20px;
+    color: #939498;
+    margin-left: 20px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+}
+.good-user div{
+    color: red;
+    margin-left: 20px;
+    font-size: larger;
+}
+.goods-pingjiasu{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -80px;
+}
+.send-to{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: small;
+    color: #939498;
+
+}
+.send-to div{
+    color: black;
+}
+ul{
+    margin-top: 50px;
+    margin-left: -40px;
+}
+li{
+    height: 50px;
+    margin-top: 10px;
+    list-style:none;
+}
+.goods-color{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: small;
+    color: #939498;
+
+}
+.color-name{
+    width: 60px;
+    height: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+.color-name:hover{
+    cursor: pointer;
+    border: 1px solid red;
+}
+.select-color{
+    height: 40px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    color: #a01f47;
+    font-size: xx-small;
+}
+.goods-size{
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: #939498;
+    margin-left: 20px;
+}
+.size{
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #040505;
+    border: 1px solid darkgrey;
+}
+.size:hover{
+    cursor: pointer;
+    background-color: #ff5500;
+}
+.goods-amount{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: small;
+    color: #939498;
+}
+.goods-amount button{
+    width: 10px;
+    height: 10px;
+}
+.input-text{
+    width: 20px;
+    padding-left: 10px;
+
+}
+.jian{
+    margin-left: 20px;
+}
+.buy{
+    background-color: #663200;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 2px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.take-in{
+    background-color: #ff5500;
+    color: white;
+    width: 110px;
+    height: 40px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.commend-rightside-next{
+    position: relative;
+    width: 180px;
+    height: 500px;
+    margin-left: 844px;
+    margin-top: -50px;
+}
+.commend-rightside-goods{
+    width: 180px;
+    height: 225px;
+    border: 1px solid #f8f8f8;
+}
+.commend-rightside-goods a{
+    color: #005aa0;
+    text-align: center;
+    font-size: x-small;
+    text-decoration: none;
+}
+.cansu-feigexian{
+    position: relative;
+    width: 1027px;
+    height: 40px;
+    top: 182px;
+    background-color: #c6c6c6;
+    display: flex;
+    align-items: center;
+}
+.share-connect{
+    position: absolute;
+    width: 420px;
+    height: 120px;
+    top: 560px;
+}
+.share-focus{
+    display: flex;
+    align-items: center;
+
+}
+.share-focus a{
+    margin-left: 80px;
+    text-decoration: none;
+    color: #005aa0;
+}
+.bound{
+    position: fixed;
+    width: 50px;
+    height: 1000px;
+    left: 1470px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #383838;
+}
+.bound div{
+    margin-top: 350px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: red;
+}
+
+.sp-detail{
+    width: 80px;
+    height: 40px;
+    margin-left: 300px;
+    line-height: 40px;
+}
+.sp-detail:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+.cs-detail{
+    margin-left: 30px;
+}
+.pj-detail{
+    margin-left: 30px;
+}
+.sh-detail{
+    margin-left: 30px;
+}
+.lxsj-left{
+    width: 250px;
+    height: 275px;
+    margin-left: 2px;
+    margin-top: 182px;
+    border: 1px solid black;
+    background-color: #f8f8f8;
+}
+.detail-hidden{
+    position: relative;
+    width: 765px;
+    height: 275px;
+    left: 258px;
+    top: -277px;
+    border: 1px solid #f8f8f8;
+}
+.cs{
+    top: -277px;
+    background-color: #ff2fab;
+}
+.pj{
+    top: -277px;
+    background-color:black;
+}
+.sh{
+    top: -277px;
+    background-color: blue;
+}
+.merchant-name{
+    color: #005aa0;
+    font-size: larger;
+    text-align: center;
+    margin-top: 20px;
+}
+.merchant{
+    color: #a0811f;
+    font-size: larger;
+
+}
+.conn-merchant{
+    margin-top: -30px;
+}
+.conn-merchant ul li{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: #040505;
+    height: 40px;
+}
+.xxc{
+    background-color: #ff2fab;
+    color: white;
+}
+.eec{
+    margin-left: 30px;
+
+}
+.come-in{
+    margin-top: 35px;
+}
+.come-in button{
+    margin-left: 27px;
+    background-color: #663200;
+    color: white;
+    font-size: large;
+    border: none;
+
+}
+
+
+
+.footer{
+    height: 140px;
+    background-color: #f2f3f7;
+    border-top: 2px solid #b9babe;
+    margin-top: 40px;
+}
+.service{
+    margin-left: 220px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.aoki-service{
+    margin-left: 100px;
+}
+.about a{
+    line-height: 30px;
+    text-decoration: none;
+    color: #8c8d91;
+    font-size: small;
+    margin-left: 5px;
+}
+.seler-center{
+    margin-top: -30px;
+}
+
+.footer-step{
+    height: 110px;
+    background-color: #f2f3f7;
+    border-top: 1px solid #b9babe;
+}
+.footer-step-control a{
+    text-decoration: none;
+    font-size: small;
+    color:#8c8d91 ;
+    margin-left: 5px;
+}
+.footer-step-control div{
+    line-height: 25px;
+}
+.footer-step-control{
+    margin-left: 300px;
+    margin-top: 20px;
+    color: #8c8d91;
+    font-size: small;
+}
+

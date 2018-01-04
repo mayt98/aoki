@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理页面</title>
+    <link rel="stylesheet" href="../aoki_css/back_managerment.css">
+    <!--<script src="../js/back_managerment.js"></script>-->
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <div>
+        <form action="">
+            <input type="text" class="search" placeholder="                输入你要找的商品">
+            <input type="submit" class="searchbutton" value="查询">
+        </form>
+    </div>
+    <div class="hyusername">
+        <marquee> 欢迎你，青木小子</marquee>
+    </div>
+</header>
+<div class="main">
+    <div class="show-left">
+        <div class="manage-title">管 理 分 类</div>
+        <div class="manage-feilei">
+            <div class="manage-user manage">用户管理</div>
+            <div class="manage-goods manage">商品管理</div>
+            <div class="manage-order manage">订单管理</div>
+            <div class="mahage-goods-image manage">商品图片管理</div>
+        </div>
+    </div>
+    <div class="show-right">
+        <div class="user-manage" id="usermanage" hidden>
+            <div class="amn-title">
+                <div class="all-user user-title">所有用户</div>
+                <div class="manager-user user-title">管理员</div>
+                <div class="normal-user user-title">一般用户</div>
+            </div>
+            <div class="user-top">
+                <div class="search-user">
+                    <form action="">
+                        <input type="text" class="search-user-text" placeholder="    请输入用户ID">
+                        <input type="submit" class="search-user-button" value="查询">
+                    </form>
+                </div>
+                <div class="bbq">
+                    <div class="adduser ccr">添加用户</div>
+                    <div class="delete ccr">删除用户</div>
+                    <div class="update ccr">修改用户信息</div>
+                </div>
+                <div class="show-update">
+
+                </div>
+            </div>
+            <div class="show-all-user">
+                <div class="detail-title"></div>
+                <div class="user-detail-title">
+                    <ul class="ul">
+                        <li style="margin-left: -5px">用户ID</li>
+                        <li style="margin-left: 112px">用户名</li>
+                        <li style="margin-left: 223px">用户密码</li>
+                        <li style="margin-left: 365px">用户电话</li>
+                        <li style="margin-left: 536px">用户邮箱</li>
+                        <li style="margin-left: 730px">用户地址</li>
+                        <li style="margin-left: 990px">注册时间</li>
+                        <li style="margin-left: 1066px">用户等级</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="ulli">
+                        <li style="margin-left: 15px">1001</li>
+                        <li style="margin-left: 110px ;">zhang</li>
+                        <li style="margin-left: 225px">12345</li>
+                        <li style="margin-left: 350px">0856-324015</li>
+                        <li style="margin-left: 513px">12345@163.com</li>
+                        <li style="margin-left: 694px">辽宁省沈阳市浑南新区</li>
+                        <li style="margin-left: 950px">2017-12-25 12:52:03</li>
+                        <li style="margin-left: 1190px">2</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="goods-manage" id="goodsmanage" >
+            <div class="goods-top">
+                商 品 管 理
+            </div>
+            <div class="goods-show-bodys">
+                <div class="bodys-left">
+                    <div class="goods-info-title">
+                        <div class="spzd">商品字段</div>
+                        <div class="zdms">字段描述</div>
+                        <div class="kczl">库存数量</div>
+                    </div>
+                    <div class="all-kucun-kuan">
+                        <div class="detail-spzd">库存总量</div>
+                        <div class="detail-zdms">所有库存的商品数量</div>
+                        <div class="detail-kczl">1100</div>
+                    </div>
+                    <div class="goods-fenlei-title">
+                        <div class="spzd">库存分类</div>
+                        <div class="zdms">库存描述</div>
+                        <div class="kczl">库存数量</div>
+                    </div>
+                    <div class="goods-fenlei-content">
+                        <div class="goods-type">T恤</div>
+                        <div class="detail-type">所有品牌的T恤库存</div>
+                        <div class="goods-shuliang">100</div>
+                    </div>
+                    <div class="goods-fenlei-content">
+                        <div class="goods-type">小西装</div>
+                        <div class="detail-type">所有品牌的西装的库存</div>
+                        <div class="goods-shuliang">400</div>
+                    </div>
+                    <div class="goods-fenlei-content">
+                        <div class="goods-type">小背心/吊带</div>
+                        <div class="detail-type">所有品牌的小背心/吊带的库存</div>
+                        <div class="goods-shuliang">200</div>
+                    </div>
+                    <div class="goods-fenlei-content">
+                        <div class="goods-type">休闲套装</div>
+                        <div class="detail-type">所有品牌的休闲套装的库存</div>
+                        <div class="goods-shuliang">100</div>
+                    </div>
+                    <div class="goods-fenlei-content">
+                        <div class="goods-type">牛仔裤</div>
+                        <div class="detail-type">所有品牌的牛仔裤库存</div>
+                        <div class="goods-shuliang">300</div>
+                    </div>
+                </div>
+                <div class="bodys-center">
+                    <div class="goods-option">操 作 商 品</div>
+
+                    <!--添加商品-->
+                    <div class="add-goods-page" hidden>
+                        <form action="">
+                            <div class="select-type-godds">
+                                请选择商品类型：<select name="" id="type" class="type-select">
+                                <option value="羽绒服">羽绒服1</option>
+                                <option value="羽绒服">羽绒服2</option>
+                                <option value="羽绒服">羽绒服3</option>
+                                <option value="羽绒服">羽绒服4</option>
+                                <option value="羽绒服">羽绒服5</option>
+                                <option value="羽绒服">羽绒服6</option>
+                            </select>
+                            </div>
+                            <br>
+                            <div class="add-input">
+                                商品名称：<input type="text"> <br>
+                                商品价格：<input type="text"> <br>
+                                商品介绍：<input type="text"> <br>
+                                商品颜色：<input type="text"> <br>
+                                商品尺寸：<input type="text"> <br>
+                                商品数量：<input type="text"> <br>
+                                商品等级：<input type="text"> <br>
+                            </div>
+                            <div class="add-button">
+                                <input type="submit" value="确认添加"><br>
+                                <input type="reset" value="重新输入">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--删除商品-->
+                    <div class="delete-goods-page"  >
+                    <div class="delete-goods">
+                        <div class="delete-base-id">
+                            <input type="text" class="delete-goods-id" placeholder="请输入商品编号">
+                            <input type="submit" class=" delete-select" value="搜索">
+                        </div>
+                    </div>
+                    <div class="delete-goods-show">
+                        <div class="detele-title">搜索商品的信息</div>
+                        <div class="goods-image">
+
+                            <img src="../aoki_images/0070154332-000000000826208138_1_220x220.jpg" height="220"
+                                 width="220"/></div>
+                        <div>
+                            <div style="font-size: large;font-weight: 500">详细信息:</div>
+                            <div class="disp">
+                                <div class="font-w">商品名称：</div>
+                                <div class="goods-content"></div>
+                                <div class="font-w">商品价格：</div>
+                                <div class="goods-content"></div>
+                            </div>
+                            <div class="disp">
+                                <div class="font-w">商品颜色：</div>
+                                <div class="goods-content"></div>
+                                <div class="font-w">商品尺寸：</div>
+
+                                <div class="goods-content"></div>
+                            </div>
+                            <div class="disp">
+                                <div class="font-w">商品数量：</div>
+                                <div class="goods-content"></div>
+                                <div class="font-w">商品等级：</div>
+
+                                <div class="goods-content"></div>
+                            </div>
+                            <div class="disp">
+                                <div class="font-w">商品介绍：</div>
+                                <div class="goods-content delete-introduce"></div>
+                            </div>
+                        </div>
+                        <div class="delete-que">
+                            <input type="submit" value="删除">
+                            <input type="button" value="返回">
+                        </div>
+                    </div>
+                    </div>
+
+                    <!--查询商品-->
+                    <div class="search-goods-page" hidden>
+                    <div class="delete-goods">
+                        <div class="delete-base-id">
+                            <input type="text" class="delete-goods-id" placeholder="请输入商品编号">
+                            <input type="submit" class=" delete-select" value="搜索">
+                        </div>
+                    </div>
+                    <div class="delete-goods-show">
+                        <div class="detele-title">搜索商品的信息</div>
+                        <div class="goods-image">
+
+                            <img src="../aoki_images/0070154332-000000000826208138_1_220x220.jpg" height="220"
+                                 width="220"/></div>
+                        <div>
+                            <div style="font-size: large;font-weight: 500">详细信息:</div>
+                            <div class="disp">
+                                <div class="font-w">商品名称：</div>
+                                <div class="goods-content"></div>
+                                <div class="font-w">商品价格：</div>
+                                <div class="goods-content"></div>
+                            </div>
+                            <div class="disp">
+                                <div class="font-w">商品颜色：</div>
+                                <div class="goods-content"></div>
+                                <div class="font-w">商品尺寸：</div>
+
+                                <div class="goods-content"></div>
+                            </div>
+                            <div class="disp">
+                                <div class="font-w">商品数量：</div>
+                                <div class="goods-content"></div>
+                                <div class="font-w">商品等级：</div>
+
+                                <div class="goods-content"></div>
+                            </div>
+                            <div class="disp">
+                                <div class="font-w">商品介绍：</div>
+                                <div class="goods-content delete-introduce"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <!--修改商品信息-->
+                    <div class="update-goods-page" hidden>
+                        <form action="">
+                            <div class="select-godds-page">
+                                <input type="text" class="delete-goods-id ttq" placeholder="请输入商品编号">
+                                <input type="submit" class=" delete-select" value="搜索">
+                            </div>
+                            <br>
+                            <div class="add-input">
+                                商品名称：<input type="text"> <br>
+                                商品价格：<input type="text"> <br>
+                                商品介绍：<input type="text"> <br>
+                                商品颜色：<input type="text"> <br>
+                                商品尺寸：<input type="text"> <br>
+                                商品数量：<input type="text"> <br>
+                                商品等级：<input type="text"> <br>
+                            </div>
+                            <div class="add-button">
+                                <input type="submit" value="确认修改"><br>
+                                <input type="reset" value="重新输入">
+                            </div>
+                        </form>
+                    </div>
+                <div class="bodys-right">
+                    <div class="add-goods-button option-goods">添加商品</div>
+                    <div class="delete-goods-button option-goods">删除商品</div>
+                    <div class="search-goods-button option-goods">查询商品</div>
+                    <div class="update-goods-button option-goods">修改信息</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</body>
+</html>

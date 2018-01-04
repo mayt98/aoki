@@ -20,6 +20,7 @@ public class ServletLogin extends HttpServlet {
     String uname;
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        System.out.println("this is ServletLogin");
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         uname=request.getParameter("uname");
@@ -30,7 +31,7 @@ public class ServletLogin extends HttpServlet {
         if(u.getUname().equals(uname)&&u.getUpass().equals(upass)){
             hs.setAttribute("uname",uname);
             hs.setAttribute("u",u);
-            response.sendRedirect("/aoki_html/goods1.jsp");
+            response.sendRedirect("/aoki_html/index.jsp");
         }else{
             hs.setAttribute("errorMessage","username is error");
             response.sendRedirect("/aoki_html/login.jsp");
@@ -71,6 +72,6 @@ public class ServletLogin extends HttpServlet {
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+doPost(request,response);
     }
 }
