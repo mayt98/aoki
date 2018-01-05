@@ -122,32 +122,9 @@
                 }
             }
 
-//联动
-            //定义了城市的二维数组，里面的顺序跟省份的顺序是相同的。通过selectedIndex获得省份的下标值来得到相应的城市数组
-            var city = [
-                ["北京", "天津", "上海", "重庆"],
-                ["南京", "苏州", "南通", "常州"],
-                ["福州", "福安", "龙岩", "南平"],
-                ["广州", "潮阳", "潮州", "澄海"],
-                ["兰州", "白银", "定西", "敦煌"]
-            ];
 
-            function getCity() {
-                //获得省份下拉框的对象
-                var sltProvince = document.form1.province;
-                //获得城市下拉框的对象
-                var sltCity = document.form1.city;
-                //得到对应省份的城市数组
-                var provinceCity = city[sltProvince.selectedIndex - 1];
 
-                //清空城市下拉框，仅留提示选项
-                sltCity.length = 1;
 
-                //将城市数组中的值填充到城市下拉框中
-                for (var i = 0; i < provinceCity.length; i++) {
-                    sltCity[i + 1] = new Option(provinceCity[i], provinceCity[i]);
-                }
-            }
         }
 
     </script>
@@ -230,7 +207,7 @@
         <div class="goods">
             <input type="checkbox" id="checkbox1">
             <div class="goods-image">
-                <img src="../aoki_images/0070170677-000000010052305428_1.jpg" height="60" width="60"/>
+                <img src="../images/GS10000048b005.jpg" height="60" width="60"/>
 
             </div>
             <div class="goods-info">商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息</div>
@@ -260,7 +237,7 @@
         <div class="goods">
             <input type="checkbox" id="checkbox2">
             <div class="goods-image">
-                <img src="../aoki_images/0070170677-000000010052305428_1.jpg" height="60" width="60"/>
+                <img src="../images/GS10000045b005.jpg" height="60" width="60"/>
 
             </div>
             <div class="goods-info">商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息</div>
@@ -305,26 +282,26 @@
                     <div class="goods-show">
                         <div class="recommend">
                             <div class="goods-recommend">
-                                <img src="../aoki_images/0070119648-000000000774162821_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000045b005.jpg" height="220"
                                      width="220"/>
                                 <div class="a-lianjie"><a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a></div>
                             </div>
                             <div class="goods-recommend">
 
-                                <img src="../aoki_images/0070154332-000000000826208138_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000046b005.jpg" height="220"
                                      width="220"/>
                                 <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
                             </div>
                             <div class="goods-recommend">
 
-                                <img src="../aoki_images/0070159286-000000010009788149_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000047b005.jpg" height="220"
                                      width="220"/>
                                 <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
                             </div>
 
 
                             <div class="goods-recommend">
-                                <img src="../aoki_images/0070160106-000000000685824760_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000048b005.jpg" height="220"
                                      width="220"/>
                                 <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
                             </div>

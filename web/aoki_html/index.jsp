@@ -17,12 +17,34 @@
     <!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
     <script>
-        function func() {
 
-        }
+            window.onload=function(){
+                if("${uname}"==""){
+                    document.getElementById("login").style.visibility="visible";
+                    console.log("name is null");
+                }else{
+                    console.log("name is not null "+"${uname}");
+                    document.getElementById("register").style.visibility="hidden";
+                    document.getElementById("login").innerHTML="${uname}";
+                }
+                for(var i=1;i<5;i++){
+                    document.getElementById("img"+i).src="../images/GS1000003"+i+"b005.jpg";
+                    document.getElementById("img"+i).style.height="310";
+                    document.getElementById("img"+i).style.width="230";
+                }
+//                document.getElementById("img2").src="../images/GS10000038b005.jpg";
+//                document.getElementById("img2").style.height="310";
+//                document.getElementById("img2").style.width="230";
+
+                document.getElementById("aimg1").onclick=function(){
+
+                }
+}
+
     </script>
 </head>
 <body>
+
 <header>
     <div class="top">
         <div class="web-map">网站导航</div>
@@ -49,7 +71,7 @@
     <div class="bodys">
         <div class="indexiterm">
             <div class="hotindexmenu" id="hotindexmenu">当季热卖</div>
-            <div class="indexmenu" id="ee" onclick="func()">今日必抢</div>
+            <div class="indexmenu" id="ee" >今日必抢</div>
             <div class="indexmenu">女季上装</div>
             <div class="indexmenu">优质下装</div>
             <div class="indexmenu">品牌推荐</div>
@@ -64,44 +86,19 @@
         <div class="rollbackimage">
 
 
-            <!--<div id="myCarousel" class="carousel slide" >-->
-            <!--&lt;!&ndash; 轮播（Carousel）指标 &ndash;&gt;-->
-            <!--<ol class="carousel-indicators" style="list-style: none">-->
-            <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
-            <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
-            <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
-            <!--</ol>-->
-            <!--&lt;!&ndash; 轮播（Carousel）项目 &ndash;&gt;-->
-            <!--<div class="carousel-inner">-->
-            <!--<div class="item active">-->
-            <!--<img class="roll" src="../aoki_images/bigcover-one.jpg" width="1480" height="340">-->
-            <!--</div>-->
-            <!--<div class="item">-->
-            <!--<img class="roll" src="../aoki_images/bigcover-two.jpg" width="1480" height="340">-->
-            <!--</div>-->
-            <!--<div class="item">-->
-
-            <!--<img src="../aoki_images/151437743547702726.jpg" width="1480" height="360"/>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; 轮播（Carousel）导航 &ndash;&gt;-->
-            <!--<a class="carousel-control left" href="#myCarousel"-->
-            <!--data-slide="prev">&lsaquo;</a>-->
-            <!--<a class="carousel-control right" href="#myCarousel"-->
-            <!--data-slide="next">&rsaquo;</a>-->
-            <!--</div>-->
 
 
-            <img src="../aoki_images/bigcover-two.jpg" height="300" width="1480"/></div>
+
+            <img src="../images/loginbackground.jpg" height="300" width="1480"/></div>
 
         <div class="goodshow">
             <div class="goodshow-step-title"><h1>品牌推荐</h1></div>
             <div class="goodshow-step">
 
-                <img src="../images/GS10000038b005.jpg" height="310" width="230" alt="">
-                <img src="../images/GS10000031b005.jpg" height="310" width="230"/>
-                <img src="../images/GS10000032b005.jpg" height="310" width="230"/>
-                <img src="../images/GS10000033b005.jpg" height="310" width="230"/>
+                <a id="aimg1" href=""><img  id="img1" /></a>
+                <img id="img2" />
+                <img id="img3" />
+                <img id="img4" />
             </div>
             <div class="goodshow-step">
                 <img src="../images/GS10000034b005.jpg" height="310" width="230"/>

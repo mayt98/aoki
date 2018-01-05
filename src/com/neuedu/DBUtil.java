@@ -9,6 +9,7 @@ public class DBUtil
 {
     public static final String ORADRI = "oracle.jdbc.driver.OracleDriver";
     public static final String URL = "jdbc:oracle:thin:@localhost:1521:ORCL";
+
     public static Connection conn;
 
     public static Connection connedDB() throws ClassNotFoundException, SQLException
