@@ -8,16 +8,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by ttc on 17-12-29.
+ * Created by ttc on 18-1-9.
  */
-@WebServlet("/ServletTest")
-public class ServletTest extends HttpServlet {
+@WebServlet("/ServletGouMai")
+public class ServletGouMai extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        System.out.println("这是Servlet test");
-        String id=request.getParameter("id");
-        System.out.println("id is"+id);
-        response.sendRedirect("/aoki_html/login1.jsp");
+        response.sendRedirect("aoki_html/gouMaiSuccess.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

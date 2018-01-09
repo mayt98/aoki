@@ -1,4 +1,4 @@
-package com.neuedu;
+package com.neuedu.lei;
 
 /**
  * Created by ttc on 17-12-28.

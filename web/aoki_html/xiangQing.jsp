@@ -11,17 +11,310 @@
     <meta charset="UTF-8">
     <title>订单页面</title>
     <link rel="stylesheet" href="../aoki_css/order.css">
-    <script src="../js/order.js"></script>
+    <style>
+        .confirm-pay-page{
+            position: absolute;
+            width: 1520px;
+            height: 1333px;
+            background-color: black;
+            opacity:0.5;
+            z-index: 51;
 
+        }
+        .confirm-pay-information{
+            width: 350px;
+            height: 550px;
+            background-color: white;
+            top: 150px;
+            left: 550px;
+            position: absolute;
+            opacity:1;
+            z-index: 52;
+        }
+        .order-pay-title{
+            width: 350px;
+            height: 50px;
+            background-color: #9d2c00;
+            color: white;
+            font-size: larger;
+            font-weight: 600;
+            line-height: 50px;
+            text-align: center;
+        }
+        /*.show-left{*/
+        /*width: 100px;*/
+        /*height: 500px;*/
+        /*background-color: #005aa0;*/
+        /*position: absolute;*/
+        /*}*/
+        /*.show-right{*/
+        /*width: 98px;*/
+        /*height: 500px;*/
+        /*margin-left: 452px;*/
+        /*margin-top: -502px;*/
+        /*background-color: #2dd536;*/
+        /*position: absolute;*/
+        /*}*/
+        .information-left{
+            width: 350px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        .ttu{
+            color: #005aa0;
+            margin-left: 20px;
+        }
+        .receiver {
+            border-bottom: 1px solid #d51825;
+            border-right: none;
+            border-left: none;
+            border-top:none;
+            height: 15px;
+            outline: none;
+            padding-left: 10px;
+            margin-left: 18px;
+            margin-top: 20px;
+            font-size: small;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .receiver:hover{
+            background-color: #d51825;
+            color: white;
+        }
+        .phone {
+            border-bottom: 1px solid #ff3be2;
+            border-right: none;
+            border-left: none;
+            border-top:none;
+            height: 15px;
+            outline: none;
+            padding-left: 10px;
+            margin-left: 25px;
+            margin-top: 20px;
+            font-size: small;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+        .phone:hover{
+            background-color: #ff3be2;
+            color: white;
+        }
+        .send-to{
+            margin-top: 20px;
+        }
+        .loc-detail{
+            border-bottom: 1px solid #2dd536;
+            border-right: none;
+            border-left: none;
+            border-top:none;
+            height: 15px;
+            outline: none;
+            padding-left: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+            font-size: small;
+
+        }
+        .sheng,.shi ,.qu{
+            height: 20px;
+            border: none;
+            outline: none;
+        }
+        .ying-pay{
+            margin: 50px;
+            display: flex;
+            align-items: center;
+            color: #6e1508;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        .ying-pay div{
+            color: red;
+            margin-left: 50px;
+        }
+        .cla-span{
+            margin-left: 30px;
+            font-weight: bold;
+            color: #6e1508;
+        }
+        .pay{
+            width: 100px;
+            height: 40px;
+            border-radius: 23px;
+            border: 1px solid black;
+            margin-left: 30px;
+            padding-left: 10px;
+            outline: none;
+            background-color: #663200;
+            color: white;
+            font-size: large;
+        }
+        .submit{
+            margin-top: 20px;
+            width: 350px;
+            height: 50px;
+            background-color: #ff5500;
+            color: white;
+            border: none;
+        }
+    </style>
+    <script src="../js/xiangQing.js"></script>
+    <script>
+        window.onload=function () {
+
+            console.log("user is"+"${u.uname}");
+            if("${u.uname}"!=""){
+                document.getElementById("isLogin").style.visibility="hidden";
+                document.getElementById("isRegister").innerHTML="${u.uname}";
+            }
+
+            document.getElementById("confirmPayPage").style.visibility = "hidden";
+            document.getElementById("buyNow").onclick=function () {
+
+                document.getElementById("confirmPayPage").style.visibility = "visible";
+                document.getElementById("formGoodsAmount").value=document.getElementById("amount").value;
+                document.getElementById("sendAddress").value=document.getElementById("sendAddress1").value;
+                document.getElementById("shouldPay").value=document.getElementById("goodsPrice1").value*document.getElementById("amount").value;
+            }
+            document.getElementById("cancleSubmit").onclick = function () {
+                document.getElementById("confirmPayPage").style.visibility = "hidden";
+            }
+
+            document.getElementById("big1").src="${goodsInfo.bigImage1}";
+            document.getElementById("big2").src="${goodsInfo.bigImage2}";
+            document.getElementById("big3").src="${goodsInfo.bigImage3}";
+            document.getElementById("big4").src="${goodsInfo.bigImage4}";
+            document.getElementById("small1").src="${goodsInfo.smallImage1}";
+            document.getElementById("small2").src="${goodsInfo.smallImage2}";
+            document.getElementById("small3").src="${goodsInfo.smallImage3}";
+            document.getElementById("small4").src="${goodsInfo.smallImage4}";
+
+            console.log("big1 src"+ document.getElementById("big1").src);
+            document.getElementById("imgForColor1").src="${goodsInfo.smallImage1}";
+            document.getElementById("imgForColor2").src="${goodsInfo.smallImage2}";
+            document.getElementById("imgForColor3").src="${goodsInfo.smallImage3}";
+            document.getElementById("imgForColor4").src="${goodsInfo.smallImage4}";
+            document.getElementById("colorone").innerHTML="${goodsInfo.color1}";
+            document.getElementById("colortwo").innerHTML="${goodsInfo.color2}";
+            document.getElementById("colorthree").innerHTML="${goodsInfo.color3}";
+            document.getElementById("colorfour").innerHTML="${goodsInfo.color4}";
+
+            window.setInterval(function(){
+                var myDate = new Date();
+                // console.log("shijian:"+(23-myDate.getHours())+(60-myDate.getMinutes())+(60-myDate.getSeconds()));
+                // console.log("colorone"+document.getElementById("colorone").innerHTML);
+                document.getElementById("hour").innerHTML=String(23-myDate.getHours());
+                document.getElementById("minute").innerHTML=String(60-myDate.getMinutes());
+                document.getElementById("seconds").innerHTML=String(60-myDate.getSeconds());
+            },10);
+
+
+
+
+            //把图片id 赋给goodsId 注意goodsId是隐藏的
+            console.log("document.getElementById('big1').src:"+document.getElementById("big1").src.substr(29,10));
+            document.getElementById("goodsId").value=document.getElementById("big1").src.substr(29,10);
+
+            one=document.getElementById("bigone");
+            two=document.getElementById("bigtwo");
+            three=document.getElementById("bigthree");
+            four=document.getElementById("bigfour");
+
+            ncolorone= document.getElementById("ncolorone");
+            ncolortwo= document.getElementById("ncolortwo");
+            ncolorthree= document.getElementById("ncolorthree");
+            ncolorfour= document.getElementById("ncolorfour");
+            colorone= document.getElementById("colorone");
+            colortwo= document.getElementById("colortwo");
+            colorthree= document.getElementById("colorthree");
+            colorfour= document.getElementById("colorfour");
+            msize=document.getElementById("msize");
+            lsize=document.getElementById("lsize");
+            xlsize=document.getElementById("xlsize");
+            xxlsize=document.getElementById("xxlsize");
+            xxxlsize=document.getElementById("xxxlsize");
+
+//加减数量
+            function jian() {
+
+                var shu=document.getElementById("amount");
+                var amount=shu.value;
+                amount--;
+                shu.value=amount;
+            }
+            function jia() {
+                var shu=document.getElementById("amount");
+                var amount=shu.value;
+                console.log("shu and amount is" +shu +" "+amount);
+                amount++;
+                shu.value=amount;
+            }
+
+            function gets() {
+                var shu=document.getElementById("amount");
+                console.log("颜色：" +color);
+                console.log("尺寸："+size);
+                console.log("数量:"+shu.value);
+            }
+        }
+        function check(){
+            console.log("check run");
+            var pay1=document.getElementById("shouldPay").value;
+            var pay2=document.getElementById("goodsPrice").value;
+            console.log("pay1 and pay2 is "+pay1+" "+pay2);
+            if(pay1!=pay2){
+                return false;
+            }
+            var phone=document.getElementById("phone").value;
+            console.log("phone is "+phone);
+            if(phone==""){
+                return false;
+            }
+            return true;
+        }
+    </script>
 
 </head>
 <body>
+<div class="cover" id="confirmPayPage" id="confirmPayPage" >
+    <div class="confirm-pay-page">
+    </div>
+
+    <div class="confirm-pay-information" >
+        <div class="order-pay-title">订单信息</div>
+        <div class="information-left">
+            <div class="ttu">收货信息:</div>
+            <hr>
+            <form action="/ServletGouMai" method="post" id="form1" name="form1" onSubmit="return check()" >
+                <span class="cla-span">收件人:</span> <input name="receiver" type="text" class="receiver" placeholder="收件人姓名"><br>
+
+                <span class="cla-span">手机号:</span><input id="phone" name="phone" type="text" class="phone" placeholder="输入手机号"><br><br>
+
+                <span class="cla-span">收件地址:<input style="border-style: none;" type="text" name="sendAddress" id="sendAddress">
+                </span>
+
+                <br>
+                <div class="ying-pay">应支付:
+                    <div><input id="shouldPay" value="6678" readonly="readOnly" style="border-style: none;"></div>
+                </div>
+                <span class="cla-span">请支付</span> <input name="goodsPrice" id="goodsPrice" type="text" class="pay" >
+                <br>
+                <input  name="formGoodsAmount" id="formGoodsAmount" readonly="readonly" hidden>
+
+                <input type="submit" class="submit" id="submit" value="提交订单">
+                <input type="button" class="submit" id="cancleSubmit" value="取消提交">
+            </form>
+        </div>
+    </div>
+</div>
 <header>
     <div class="top">
         <div class="web-map">网站导航</div>
         <div class="account-service">客户服务</div>
-        <div><a href="" class="loginbutton">请登录？</a></div>
-        <div><a href="" class="registerbutton">注册有礼</a></div>
+        <div><a href="/aoki_html/login1.jsp" class="loginbutton" id="isLogin">请登录？</a></div>
+        <div><a href="" class="registerbutton" id="isRegister">注册有礼</a></div>
         <div class="heaorder">
             <div class="myorder">我的订单</div>
             <div class="myorder">我的消息</div>
@@ -53,6 +346,7 @@
 
         </div>
         <div class="goods-order-page">
+            <form action="/ServletXiangQing" method="post">
             <div class="goods-map">
                 <div class="cct">
                     <div class="position">当前位置</div>:
@@ -65,35 +359,36 @@
                 <div class="big-image-show" >
 
 
-                    <img src="../images/GS10000050b001.jpg" height="400" width="400"
-                         class="big-1" id="bigone"/>
+                    <img  height="400" width="400"
+                         class="big-1" id="big1" />
+                    <input id="goodsId" name="goodsId" hidden>
 
-                    <img src="../images/GS10000050b002.jpg" height="400" width="400"
-                         height="400" width="400" class="big-2"  id="bigtwo" hidden/>
-
-
-                    <img src="../images/GS10000050b003.jpg" height="400" width="400"
-                         height="400" width="400" id="bigthree" hidden/>
+                    <img  height="400" width="400"
+                         height="400" width="400" class="big-2"  id="big2" hidden/>
 
 
-                    <img src="../images/GS10000050b004.jpg" height="400" width="400"
-                         height="400" width="400" id="bigfour" hidden/>
+                    <img  height="400" width="400"
+                         height="400" width="400" id="big3" hidden/>
+
+
+                    <img  height="400" width="400"
+                         height="400" width="400" id="big4" hidden/>
                 </div>
                 <div class="small-image-show" >
 
-                    <img src="../images/GS10000050s001.jpg"
-                         height="60" width="60" class="small-1" id="small-1"  onmouseover="showbigone()"/>
+                    <img
+                         height="60" width="60" class="small-1" id="small1"  onmouseover="showbigone()"/>
 
 
-                    <img src="../images/GS10000050s002.jpg"
-                         height="60" width="60" class="small-2" id="small-2" onmouseover="showbigtwo()"/>
+                    <img
+                         height="60" width="60" class="small-2" id="small2" onmouseover="showbigtwo()"/>
 
 
-                    <img src="../images/GS10000050s003.jpg"
+                    <img id="small3"
                          class="small-3" height="60" width="60" onmouseover="showbigthree()"/>
 
 
-                    <img src="../images/GS10000050s004.jpg"
+                    <img id="small4"
                          class="small-4" height="60" width="60" onmouseover="showbigfour()"/>
 
                 </div>
@@ -110,19 +405,19 @@
                 </div>
             </div>
             <div class="goods-detail-right">
-                <div class="goods-introduce">
-                    【券后价279】高梵2017亮点羽绒服女短款女装
-                    条纹拼接透明可视轻薄秋冬棒球服
+                <div class="goods-introduce" name="goods-introduce" id="goods-introduce">
+                <input style="width:100%;border-style: none;" name="goodsIntroduce" value="${goodsInfo.goodsIntroduce}">
+
                 </div>
                 <div class="goods-active">
                     <div class="goods-chuxiao">
-                        <div>活动倒计时还有：5小时25分30秒</div>
+                        <div>活动倒计时还有：<span id="hour"></span>小时<span id="minute"></span>分<span id="seconds"></span>秒</div>
                     </div>
                     <div class="goods-cankaojia">参考价：
                         <div><s>￥688.00</s></div>
                     </div>
                     <div class="goods-shijia"> 现价：
-                        <div>￥288.00</div>
+                        <div><input id="goodsPrice1" name="goodsPrice" value="${goodsInfo.goodsPrice}" readonly="readonly" style="border-style: none;background-color: transparent;"></div>
                     </div>
                     <div class="good-user">会员：
                         <div>再打9.5折</div>
@@ -131,30 +426,33 @@
                 </div>
                 <div class="send-to">
                     送至：
-                    <div>辽宁省沈阳市浑南新区</div>
+                    <div><input name="sendAddress" id="sendAddress1" value="辽宁省沈阳市浑南新区" style="border-style: none;"></div>
                 </div>
                 <div>
                     <ul>
                         <li class="goods-color">
                             <div> 颜色：</div>
+                            <%--这个隐藏的input表示哪个颜色是被选中的--%>
+                            <input name="colorSelected" id="colorSelected" hidden>
                             <div class="color-name"id="ncolorone" onclick="selectcolorone()">
-                                <img src="../images/GS10000050s001.jpg"  height="40" width="40"/>
+                                <img id="imgForColor1"  height="40" width="40"/>
                                 <div class="select-color" id="colorone">褐色</div>
                             </div>
                             <div class="color-name" id="ncolortwo" onclick="selectcolortwo()">
-                                <img src="../images/GS10000050s002.jpg"  height="40" width="40"/>
+                                <img id="imgForColor2"  height="40" width="40"/>
                                 <div class="select-color" id="colortwo">深红色</div>
                             </div>
                             <div class="color-name" id="ncolorthree" onclick="selectcolorthree()">
-                                <img src="../images/GS10000050s003.jpg"  height="40" width="40"/>
+                                <img id="imgForColor3"  height="40" width="40"/>
                                 <div class="select-color" id="colorthree">黑色</div>
                             </div>
                             <div class="color-name" id="ncolorfour" onclick="selectcolorfour()">
-                                <img src="../images/GS10000050s004.jpg"  height="40" width="40"/>
+                                <img id="imgForColor4"  height="40" width="40"/>
                                 <div class="select-color" id="colorfour">橘黄色</div>
                             </div>
                         </li>
                         <li class="goods-size">
+                            <input name="sizeSelected" id="sizeSelected" hidden>
                             <div>尺码：</div>
                             <div class="size" id="msize" onclick="selectsizem()">M</div>
                             <div class="size" id="lsize" onclick="selectsizel()">L</div>
@@ -164,21 +462,23 @@
                         </li>
                         <li class="goods-amount">
                             <div>数量</div>
-                            <input type="button" value=" - " class="jian" id="jian" onclick="jian()">
-                            <input type="text" class="input-text" value="1" id="amount">
-                            <input type="button" value=" + " class="jia" id="jia" onclick="jia()">
+                            <input type="button" value=" - " class="jian" id="jian" onclick="jianFunc()">
+                            <input type="text" class="input-text" value="1" id="amount" name="goodsAmount">
+                            <input type="button" value=" + " class="jia" id="jia" onclick="jiaFunc()">
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <input type="button" value="立即购买" class="buy">
-                    <input type="submit" id="gouwuche" value="加入购物车" class="take-in" onclick="gets()">
+                    <input id="buyNow" type="button" value="立即购买" class="buy">
+                    <input type="submit" id="gouwuche" value="加入购物车" class="take-in" >
                 </div>
 
             </div>
+            </form>
             <div class="commend-rightside-next">
                 <div class="commend-rightside-goods">
                     <img src="../images/GS10000015b002.jpg" height="180" width="180"/>
+
                     <a href="">小棉袄女短款2017新款冬装韩版可爱面包服加厚保暖棉衣冬天外套潮</a>
                 </div>
                 <div class="commend-rightside-goods">

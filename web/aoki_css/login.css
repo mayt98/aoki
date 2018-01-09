@@ -4,22 +4,80 @@
 
     /*width:100%;*/
 /*}*/
-form{
-    position: relative;
-    left:6%;
-    top:-220px;
-    height:200px;
-    width:400px;
-    border:10px none black;
+
+.background{
+    margin-top: 110px;
+    position: absolute;
 
 }
-#sub1{
-    width:104px;
-    height:40px;
-    color: green;
+.bodys{
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 160px;
+    width: 360px;
+    height: 410px;
+    background-color: white;
+
+
 }
-#sub2{
-    width:104px;
-    height:40px;
+.topcover{
+    width: 360px;
+    height: 20px;
+    background-color: #ff6d28;
+    margin-top: 1px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 1px solid ghostwhite;
+}
+p{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+p:hover{
+    cursor: pointer;
+    background: -webkit-linear-gradient(#ceced5, white);
+}
+form{
+    margin-top: 60px;
+}
+.label{
+    margin-left: 10px;
+    margin-top: 160px;
+
+}
+span{
+    margin-left: 30px;
+}
+.username{
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.hid{
+    position: absolute;
+    font-size: small;
     color: red;
+    margin-left: 100px;
+
+}
+.password{
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+.button{
+    width: 300px;
+    height: 40px;
+    margin-top: 40px;
+    border:none;
+    background-color: #2378ff;
+    margin-left: 30px;
 }

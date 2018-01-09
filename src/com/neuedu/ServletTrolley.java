@@ -16,9 +16,11 @@ import static java.lang.Integer.parseInt;
 /**
  * Created by ttc on 18-1-4.
  */
-@WebServlet("/ServletOrder")
-public class ServletOrder extends HttpServlet {
+@WebServlet("/ServletTrolley")
+public class ServletTrolley extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+
 
         order o=new order();
         o.setReceiver(request.getParameter("receiver"));
@@ -26,6 +28,7 @@ public class ServletOrder extends HttpServlet {
         o.setPhone(request.getParameter("phone"));
         System.out.println("goodsPrice 's value");
         o.setGoodsPrice(Float.parseFloat(request.getParameter("goodsPrice")));
+        System.out.println("the value of formGoodsAmount is"+request.getParameter("formGoodsAmount"));
         o.setGoodsAmount(Integer.parseInt(request.getParameter("formGoodsAmount")));
         System.out.println("shouldPay"+request.getParameterValues("shouldPay"));
         System.out.println("formGoodsAmount is"+request.getParameter("formGoodsAmount"));
@@ -36,7 +39,7 @@ public class ServletOrder extends HttpServlet {
         System.out.println("receiver is "+o.getReceiver());
         System.out.println(o.getSendAddress()+" "+o.getReceiver()+" "+o.getPhone());
         HttpSession hs=request.getSession();
-        hs.setAttribute("order",o);
+        hs.setAttribute("orderState",o);
 
         response.sendRedirect("/aoki_html/order_state.jsp");
     }

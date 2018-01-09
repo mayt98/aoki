@@ -10,21 +10,27 @@
 <head>
     <title>订单状态页面</title>
     <link rel="stylesheet" href="../aoki_css/order_state.css">
-<script>
-    window.onload=function(){
-        var receiver="${order.getReceiver()}";
+    <script>
+        window.onload=function(){
+            var receiver="${orderState.getReceiver()}";
+            if(receiver==""){
+                console.log("receiver is null"+receiver);
+            }else{
+                document.getElementById("isLogin1").hidden="hidden";
+                document.getElementById("isLogin2").innerHTML=receiver;
+                document.getElementById("goodsPrice").innerHTML="${orderState.getGoodsPrice()}";
+                document.getElementById("goodsAmount").innerHTML="${orderState.getGoodsAmount()}";
+                console.log("hs s order goodsId is"+"${order.getGoodsId()}");
+                console.log("santiao xinxi"+"${order.getGoodsIntroduce()}"+"${order.getGoodsColor()}"+"${order.getGoodsSize()}");
+                document.getElementById("img1").src="../images/"+"${order.getGoodsId()}"+"s001.jpg";
+                document.getElementById("goodsInfo").innerHTML="${order.getGoodsIntroduce()}";
+                document.getElementById("goodsColor").innerHTML="${order.getGoodsColor()}";
+                document.getElementById("goodsSize").innerHTML="${order.getGoodsSize()}";
 
-        if(receiver==""){
-            console.log("receiver is null"+receiver);
-        }else{
 
-            document.getElementById("isLogin1").hidden="hidden";
-            document.getElementById("isLogin2").innerHTML=receiver;
-            document.getElementById("goodsPrice").innerHTML="${order.getGoodsPrice()}";
-            document.getElementById("goodsAmount").innerHTML="${order.getGoodsAmount()}";
+            }
         }
-    }
-</script>
+    </script>
 </head>
 <body>
 
@@ -33,7 +39,7 @@
     <div class="top">
         <div class="web-map">网站导航</div>
         <div class="account-service">客户服务</div>
-        <div><a href="" id="isLogin1" class="loginbutton">请登录？</a></div>
+        <div><a href="/aoki_html/login1.jsp" id="isLogin1" class="loginbutton">请登录？</a></div>
         <div><a href="" id="isLogin2" class="registerbutton">注册有礼</a></div>
 
         <div class="myorder">我的订单</div>
@@ -65,16 +71,16 @@
             <div class="goods">
 
                 <div class="goods-image">
-                    <img src="../aoki_images/0070170677-000000010052305428_1.jpg" height="60" width="60"/>
+                    <img id="img1" height="60" width="60"/>
 
                 </div>
-                <div class="goods-info">商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息商品信息</div>
+                <span class="goods-info"><span id="goodsInfo"></span></span>
                 <div class="goods-size">
                     <div>颜色:
-                        <div>红色</div>
+                        <span id="goodsColor" ></span>
                     </div>
                     <div>尺寸:
-                        <div>XL</div>
+                        <span id="goodsSize"></span>
                     </div>
                 </div>
                 <div class="goods-price" ><div name="goodsPrice" id="goodsPrice"></div></div>
@@ -119,28 +125,30 @@
                     <div class="goods-show">
                         <div class="recommend">
                             <div class="goods-recommend">
-                                <img src="../aoki_images/0070119648-000000000774162821_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000028b002.jpg" height="220"
                                      width="220"/>
-                                <div class="a-lianjie"><a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a></div>
+                                <div class="a-lianjie">
+                                    <a href="">丝棉服女2017冬季新款中长款大码加厚大毛领连帽棉衣外套</a>
+                                </div>
                             </div>
                             <div class="goods-recommend">
 
-                                <img src="../aoki_images/0070154332-000000000826208138_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000031b002.jpg" height="220"
                                      width="220"/>
-                                <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
+                                <a href="">2017秋冬女装新款韩版气质修身加厚中长款毛呢大衣外套女</a>
                             </div>
                             <div class="goods-recommend">
 
-                                <img src="../aoki_images/0070159286-000000010009788149_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000042b002.jpg" height="220"
                                      width="220"/>
-                                <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
+                                <a href="">2017冬季新款百搭羽绒棉衣女短款韩版女士连帽修身显瘦棉服外套</a>
                             </div>
 
 
                             <div class="goods-recommend">
-                                <img src="../aoki_images/0070160106-000000000685824760_1_220x220.jpg" height="220"
+                                <img src="../images/GS10000027b002.jpg" height="220"
                                      width="220"/>
-                                <a href="">点击链接到对应的订单页面点击链接到对应的订单页面点击链接到对应的订单页面</a>
+                                <a href="">2017秋冬女装新款韩版宽松百搭中长款加绒加厚大码格子衬衫女</a>
                             </div>
 
                         </div>

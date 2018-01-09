@@ -1,5 +1,7 @@
 package com.neuedu;
 
+import com.neuedu.lei.User;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -23,8 +25,9 @@ public class ServletLogin extends HttpServlet {
         System.out.println("this is ServletLogin");
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        uname=request.getParameter("uname");
-        String upass=request.getParameter("upass");
+        uname=request.getParameter("username");
+        String upass=request.getParameter("password");
+        System.out.println("uname and upass is "+uname+" "+upass);
         User u=getUser(uname);
         HttpSession hs=request.getSession();
 
@@ -34,7 +37,7 @@ public class ServletLogin extends HttpServlet {
             response.sendRedirect("/aoki_html/index.jsp");
         }else{
             hs.setAttribute("errorMessage","username is error");
-            response.sendRedirect("/aoki_html/login.jsp");
+            response.sendRedirect("/aoki_html/login1.jsp");
         }
 
     }
@@ -68,7 +71,36 @@ public class ServletLogin extends HttpServlet {
                 return u;
         }
 
-
+//    private User getUser(String uname)
+//    {
+//        System.out.println("getUser line 1");
+//        User u=new User();
+//        PreparedStatement ps=null;
+//        ResultSet rs=null;
+//        try {
+//            Connection conn=DBUtil.connedDB();
+//            String sql="select * from userinfo where username=?";
+//            ps=conn.prepareStatement(sql);
+//            ps.setString(1,uname);
+//            rs=ps.executeQuery();
+//            System.out.println("rs rs"+rs.toString());
+//            if(rs.next()){
+//                System.out.println("okokok");
+//                u.setUname(rs.getString("username"));
+//                System.out.println(rs.getString("uname")+"   uname upass  "+rs.getString("upass"));
+//                u.setUpass(rs.getString("userpsd"));
+//            }
+//            System.out.println("uname he upass"+uname+"  "+u.getUpass());
+//
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }finally{
+//            DBUtil.releaseDB(ps,rs);
+//        }
+//        return u;
+//    }
 
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

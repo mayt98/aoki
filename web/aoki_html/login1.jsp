@@ -8,23 +8,32 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
-    <style type="text/css">
-        @import "/aoki_css/login.css";
-    </style>
+
+
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../aoki_css/login.css">
+    <script src="../js/login.js"></script>
 </head>
 <body>
+<div class="background">
+    <img src="../images/l011.jpg" width="1408px" height="500px" alt="">
+</div>
+<div class="bodys">
+    <div class="topcover"> </div>
+    <diV class="top"> <P class="pone" >二维码登录</P>|<p class="ptwo">账户登录</p></diV>
+    <form action="/ServletLogin" method="post" onsubmit="return check()">
+        <span class="lable">用户名</span>
+        <input type="text" class="username" name="username" id="username" placeholder="手机号/邮箱"
+               onfocus="cheakhiden()"  required><br>
 
-<img src="/images/loginbackground.jpg" style="width:100%">
-${errorMessage}
+        <span  class="lable">密&nbsp;&nbsp;码</span>
+        <input type="password" class="password" name="password" id="password" placeholder="密码不少于六位"
+               onblur="hiden()" required>
+        <div class="hid" id="chpsd" hidden>输入密码错误名有误</div>
+        <input type="submit" value="登录" class="button">
+    </form>
 
-<form action="/ServletLogin" method="post">
 
-    <span>用户名：<input type="text" value="zhangsan" name="uname" placeholder="请输入用户名"><br>
-    密 码 ：<input type="password" name="upass" value="upass" placeholder="请输入密码"><br></span>
-    <input id="sub1" type="submit" value="登录">
-    <input id="sub2" type="button" value="注册">
-</form>
-<a href="/ServletLogin?uname=zhangsan&upass=upass" >测试链接</a>
+</div>
 </body>
 </html>

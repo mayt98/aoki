@@ -1,4 +1,5 @@
 //商品详细参数规格的弹出滑动效果
+
 function show1() {
     document.getElementById("spxx").hidden = true;
     document.getElementById("cs").hidden = false;
@@ -26,47 +27,45 @@ function show3() {
 }
 //order页的商品滑动效果js代码
 window.onload =function () {
-    one=document.getElementById("bigone");
-    two=document.getElementById("bigtwo");
-    three=document.getElementById("bigthree");
-    four=document.getElementById("bigfour");
 
-    ncolorone= document.getElementById("ncolorone");
-    ncolortwo= document.getElementById("ncolortwo");
-    ncolorthree= document.getElementById("ncolorthree");
-    ncolorfour= document.getElementById("ncolorfour");
-    colorone= document.getElementById("colorone");
-    colortwo= document.getElementById("colortwo");
-    colorthree= document.getElementById("colorthree");
-    colorfour= document.getElementById("colorfour");
-    msize=document.getElementById("msize");
-    lsize=document.getElementById("lsize");
-    xlsize=document.getElementById("xlsize");
-    xxlsize=document.getElementById("xxlsize");
-    xxxlsize=document.getElementById("xxxlsize");
 
 
 }
 function showbigone() {
-
+    one=document.getElementById("bigone");
+    two=document.getElementById("bigtwo");
+    three=document.getElementById("bigthree");
+    four=document.getElementById("bigfour");
     one.hidden=false;
     two.hidden=true;
     three.hidden=true;
     four.hidden=true;
 }
 function showbigtwo() {
+    one=document.getElementById("bigone");
+    two=document.getElementById("bigtwo");
+    three=document.getElementById("bigthree");
+    four=document.getElementById("bigfour");
     one.hidden=true;
     two.hidden=false;
     three.hidden=true;
     four.hidden=true;
 }
 function showbigthree() {
+    one=document.getElementById("bigone");
+    two=document.getElementById("bigtwo");
+    three=document.getElementById("bigthree");
+    four=document.getElementById("bigfour");
     one.hidden=true;
     two.hidden=true;
     three.hidden=false;
     four.hidden=true;
 }
 function showbigfour() {
+    one=document.getElementById("bigone");
+    two=document.getElementById("bigtwo");
+    three=document.getElementById("bigthree");
+    four=document.getElementById("bigfour");
     one.hidden=true;
     two.hidden=true;
     three.hidden=true;
@@ -82,6 +81,8 @@ function selectcolorone() {
     ncolorfour.style.border="none";
     color=colorone.innerHTML;
 
+    document.getElementById("colorSelected").value=color;
+    console.log("the color selected is "+document.getElementById("colorSelected").value);
 
 
 }
@@ -92,6 +93,8 @@ function selectcolortwo() {
     ncolorfour.style.border="none";
     color=colortwo.innerHTML;
 
+    document.getElementById("colorSelected").value=color;
+    console.log("the color selected is "+document.getElementById("colorSelected").value);
 }
 function selectcolorthree() {
     ncolorone.style.border="none";
@@ -100,6 +103,8 @@ function selectcolorthree() {
     ncolorfour.style.border="none";
     color=colorthree.innerHTML;
 
+    document.getElementById("colorSelected").value=color;
+    console.log("the color selected is "+document.getElementById("colorSelected").value);
 }
 function selectcolorfour() {
     ncolorone.style.border="none";
@@ -107,6 +112,9 @@ function selectcolorfour() {
     ncolorthree.style.border="none";
     ncolorfour.style.border="2px solid red";
     color=colorfour.innerHTML;
+
+    document.getElementById("colorSelected").value=color;
+    console.log("the color selected is "+document.getElementById("colorSelected").value);
 
 }
 //选择尺寸
@@ -118,6 +126,9 @@ function selectsizem() {
     xxxlsize.style.backgroundColor="black";
     size=msize.innerHTML;
 
+    document.getElementById("sizeSelected").value=size;
+    console.log("the size selected is"+document.getElementById("sizeSelected").value);
+
 }
 function selectsizel() {
     msize.style.backgroundColor="black";
@@ -126,6 +137,9 @@ function selectsizel() {
     xxlsize.style.backgroundColor="black";
     xxxlsize.style.backgroundColor="black";
     size=lsize.innerHTML;
+    document.getElementById("sizeSelected").value=size;
+    console.log("the size selected is"+document.getElementById("sizeSelected").value);
+
 
 }
 function selectsizexl() {
@@ -135,6 +149,8 @@ function selectsizexl() {
     xxlsize.style.backgroundColor="black";
     xxxlsize.style.backgroundColor="black";
     size=xlsize.innerHTML;
+    document.getElementById("sizeSelected").value=size;
+    console.log("the size selected is"+document.getElementById("sizeSelected").value);
 
 }
 function selectsizexxl() {
@@ -144,6 +160,8 @@ function selectsizexxl() {
     xxlsize.style.backgroundColor="#ff5500";
     xxxlsize.style.backgroundColor="black";
     size=xxlsize.innerHTML;
+    document.getElementById("sizeSelected").value=size;
+    console.log("the size selected is"+document.getElementById("sizeSelected").value);
 
 }
 function selectsizexxxl() {
@@ -153,26 +171,7 @@ function selectsizexxxl() {
     xxlsize.style.backgroundColor="black";
     xxxlsize.style.backgroundColor="#ff5500";
     size=xxxlsize.innerHTML;
+    document.getElementById("sizeSelected").value=size;
+    console.log("the size selected is"+document.getElementById("sizeSelected").value);
 
-}
-//加减数量
-function jian() {
-
-    var shu=document.getElementById("amount");
-    var amount=shu.value;
-    amount--;
-    shu.value=amount;
-}
-function jia() {
-    var shu=document.getElementById("amount");
-    var amount=shu.value;
-    amount++;
-    shu.value=amount;
-}
-
-function gets() {
-    var shu=document.getElementById("amount");
-    console.log("颜色：" +color);
-    console.log("尺寸："+size);
-    console.log("数量:"+shu.value);
 }
